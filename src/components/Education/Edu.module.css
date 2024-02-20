@@ -1,0 +1,70 @@
+
+.EducationPage{
+    margin-top:5%;
+}
+.heading{
+    font-size:30px;
+}
+
+.EduCards{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+    margin:5% 3%;
+}
+.cardInfo{
+    display: flex;
+    gap:10%;
+}
+
+.EduCard{
+    background-color: #5b96e2;
+    line-height: 1.4;
+
+    max-width: 350px;
+    padding:2%;
+
+    position:relative;
+    overflow: hidden;
+}
+
+.EduCard > *{
+    position: relative;
+    z-index:2;
+}
+
+.EduCard::before{
+    content:'';
+    position: absolute;
+    left:var(--x);
+    top:var(--y);
+    transform: translate(-50%,-50%);
+    width:0px;
+    height:0px;
+    border-radius: 50%;
+    background-color: #2b75d5;
+    z-index:1;
+    transition:width .5s ease, height .5s ease;
+}
+.EduCard:hover::before{
+    width:1000px;
+    height:1000px;
+}
+
+#icon{
+    height:100px;
+    width:100%;
+}
+
+@media screen and (max-width:900px) {
+    .EduCards{
+        flex-direction: column-reverse;
+        
+        margin:5% 5%;
+    }
+    .cardInfo{
+        align-items: center;
+        flex-direction: column;
+        gap:30px;
+    }
+}

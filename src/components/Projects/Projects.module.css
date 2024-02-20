@@ -1,0 +1,136 @@
+@import './../../var.css';
+
+.ProjectPage{
+    margin:10% 0;
+}
+.heading{
+    font-size:50px;
+}
+
+/*------------------------------- Carousal ---------------------*/
+
+.carousal{
+    position:relative;
+    overflow: hidden;
+    padding:3% 0 5% 0;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding:3% 0;
+}
+
+/*---------------------------- Project section -------------------*/
+
+.project1,.project2,.project3{
+    transition: all .5s ease;
+    opacity: .5;
+}
+.project2{
+    opacity: 1;
+}
+.project1:hover,.project2:hover,.project3:hover{
+    cursor: pointer;
+}
+
+/*---------------------- Project Description --------------------------*/
+
+.centerFrame,#des1,#des2,#des3{
+    transition: all .5s ease;
+}
+.centerFrame:hover,#des1:hover,#des2:hover,#des3:hover{
+    cursor: pointer;
+}
+.centerFrame #des1,.centerFrame #des2,.centerFrame #des3{
+    position: absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+
+    padding:5%;
+}
+.centerFrame h2{
+    font-size:30px;
+}
+.centerFrame h3{
+    margin-top:3%;
+}
+.centerFrame p{
+    margin-top:6%;
+    line-height: 1.5;
+    font-size:20px;
+    font-weight: 500;
+
+    color:white;
+}
+
+.centerFrame button{
+    margin-top:5%;
+    padding:2%;
+    font-size:15px;
+    font-weight: bolder;
+    background-color: rgb(11, 11, 11);
+    border:none;
+    color:white;
+}
+
+/*---------------------------------- Project Selectors -------------------*/
+
+.selectors{
+    position:absolute;
+    bottom:0;
+
+    left:45%;
+    top:90%;
+}
+
+.selectors button{
+    content: "";
+    width:15px;
+    height:15px;
+    margin:40px 0 0 30px;
+    border-radius: 50%;
+    border:none;
+    background-color: rgba(42, 63, 201, 0.8);
+    transition:all .7s;
+}
+.selectors button:hover{
+    cursor: pointer;
+    width:15px;
+    height:15px;
+    background-color: rgb(42, 93, 211,.5);
+}
+
+/*-------------------------- Carousal Center Frame -----------------------*/
+
+.carousal .centerFrame{
+    content:'';
+    width:450px;
+    height:480px;
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    border:3px solid black;
+}
+
+@media screen and (max-width:800px){
+    .carousal{
+        padding:5% 0 10% 0;
+    }
+    .selectors{
+        left:40%;
+    }
+}
+@media screen and (max-width:500px){
+    .carousal{
+        height:600px;
+    }
+    .selectors{
+        left:30%;
+    }
+}
