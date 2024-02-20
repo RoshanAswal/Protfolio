@@ -2,6 +2,7 @@ import React from "react"
 import styles from './Intro.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram,faLinkedinIn,faGithub } from "@fortawesome/free-brands-svg-icons";
+import bg from '../../../public/bg.png';
 
 const Intro = () => {
   return (
@@ -35,7 +36,7 @@ const Intro = () => {
             320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
           </path>
         </svg>
-        <img src="../../../public/bg.png"></img>
+        <img src={bg}></img>
       </div>
     </div>
   )
