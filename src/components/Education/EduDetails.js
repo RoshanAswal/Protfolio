@@ -3,7 +3,7 @@ import { faUniversity,faSchool } from "@fortawesome/free-solid-svg-icons"
 export const EducationDetails=[
     {
         'title':'School Education',
-        'detail':'Completed 10th and 12th from Holy Angel Senior Secondary School. I had Physics, Chemistry and Mathematics as my major subjects',
+        'detail':'Completed my 10th and 12th from Holy Angel Senior Secondary School. I had Physics, Chemistry and Mathematics as my major subjects',
         'Grade':'93%',
         'time':'2015 - 2020',
         'icon':faSchool

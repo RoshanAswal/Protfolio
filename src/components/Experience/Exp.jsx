@@ -16,7 +16,7 @@ const Exp = () => {
             <h3>Designation - Frontend Intern</h3>
             <h4>Duration - 2 months</h4>
             <p>
-              Created a Google Forms-like survey tool enabling clients to craft customized questions (rating, ranking, short, multiple
+              Created a Forms-like survey tool enabling clients to craft customized questions (rating, ranking, short, multiple
               choice) for user responses.
               Implemented drag-and-drop functionality for form customization, enhancing user experience and Reduced form creation
               time by 50% through optimized API calls, and addressed frontend bugs for improved organizational efficiency.
